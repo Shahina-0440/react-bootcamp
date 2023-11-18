@@ -1,0 +1,41 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.card_container{
+  margin:70px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap:50px;
+}
+.card{
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  box-shadow: 6px 3px 6px #726e6e;
+  border-radius: 6px;
+  
+}
+.card img{
+  padding:20px;
+  width:300px;
+  height:300px;
+  border-radius: 6px;
+}
+.btn{
+  margin:20px;
+  padding:10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+.heading{
+  background-color: #c5c1c1;
+  text-align:center;
+  text-transform:uppercase;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
