@@ -1,12 +1,14 @@
 import React from "react";
-import Heading from "./components/Heading"
-import Container from "./components/Container"
+import Product from "./component/Product";
+import {Provider} from  "react-redux";
+import { Store } from "./reducers/Store";
 function App(){
     return (
         <>
-            <Heading/>
-            <Container/>
-
+        <Provider  store={Store}>
+                <Product/>
+        </Provider>
+        
         </>
     )
 
