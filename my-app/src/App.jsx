@@ -1,17 +1,23 @@
 import React from "react";
-import Product from "./component/Product";
-import {Provider} from  "react-redux";
-import { Store } from "./reducers/Store";
-function App(){
-    return (
-        <>
-        <Provider  store={Store}>
-                <Product/>
-        </Provider>
-        
-        </>
-    )
 
+export default class  App extends React.Component(){
+    constructor(props){
+        super(props);
+        this.state={
+            products:[{id:1,qty:1},
+             {id:2,qty:2}] 
+         }
+    }
+   
+    render(){
+
+            return (
+                <>
+                <span>{this.state.qty}</span>
+                
+                </>
+            )
+    }
 }
 
 
@@ -35,5 +41,3 @@ function App(){
 
 
 
-
-export default App;
